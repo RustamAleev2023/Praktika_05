@@ -7,7 +7,8 @@ public class Main {
 //       task1();
 //       task2();
 //       task3();
-       task4();
+//       task4();
+       task5();
     }
 
     //Task1
@@ -97,5 +98,24 @@ public class Main {
         System.out.println("В " + length + "м " + length / 1609.34 + " миль");
         System.out.println("В " + length + "м " + length * 39.3701 + " дюймов");
         System.out.println("В " + length + "м " + length * 1.09361 + " ярдов");
+    }
+
+    //Task5
+    public static void task5(){
+        System.out.println("Введите кол-во часов");
+        Scanner scanner = new Scanner(System.in);
+        int hours = scanner.nextInt();
+
+        if(hours >= 0 && hours < 6){
+            System.out.println("Good Night");
+        } else if(hours >= 6 && hours < 13){
+            System.out.println("Good Morning");
+        } else if (hours >= 13 && hours < 17) {
+            System.out.println("Good day");
+        }else if(hours >= 17 && hours < 24){
+            System.out.println("Good Evening");
+        } else {
+            System.out.println("Кол-во часов должно быть в пределах от 0 до 24");
+        }
     }
 }
