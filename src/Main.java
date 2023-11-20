@@ -6,7 +6,8 @@ public class Main {
     public static void main(String[] args) {
 //       task1();
 //       task2();
-       task3();
+//       task3();
+       task4();
     }
 
     //Task1
@@ -85,5 +86,16 @@ public class Main {
         } else {
             System.out.println("Вы ввели некорректную операцию");
         }
+    }
+
+    //Task4
+    public static void task4(){
+        System.out.println("Введите кол-во метров");
+        Scanner scanner = new Scanner(System.in);
+        int length = scanner.nextInt();
+
+        System.out.println("В " + length + "м " + length / 1609.34 + " миль");
+        System.out.println("В " + length + "м " + length * 39.3701 + " дюймов");
+        System.out.println("В " + length + "м " + length * 1.09361 + " ярдов");
     }
 }
